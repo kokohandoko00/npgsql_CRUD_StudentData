@@ -1,0 +1,38 @@
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.Form1.resources
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.csproj.GenerateResource.cache
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.exe
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.deps.json
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.runtimeconfig.json
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.dll
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.pdb
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.csproj.CopyComplete
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.dll
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\refint\ConnectPostGreSQL.dll
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.pdb
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.genruntimeconfig.cache
+C:\Users\ASUS\OneDrive - UGM 365\Android Studio\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ref\ConnectPostGreSQL.dll
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.exe
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.deps.json
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.runtimeconfig.json
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.dll
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\ConnectPostGreSQL.pdb
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\bin\Debug\net6.0-windows\Npgsql.dll
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.csproj.AssemblyReference.cache
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.Form1.resources
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.csproj.GenerateResource.cache
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.GeneratedMSBuildEditorConfig.editorconfig
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.AssemblyInfoInputs.cache
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.AssemblyInfo.cs
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.csproj.CoreCompileInputs.cache
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.csproj.CopyComplete
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.dll
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\refint\ConnectPostGreSQL.dll
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.pdb
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ConnectPostGreSQL.genruntimeconfig.cache
+E:\tugas_koko\Semester_7\Junior_Projek _TI\Program #2\Connect PostGreSQL\ConnectPostGreSQL\ConnectPostGreSQL\obj\Debug\net6.0-windows\ref\ConnectPostGreSQL.dll

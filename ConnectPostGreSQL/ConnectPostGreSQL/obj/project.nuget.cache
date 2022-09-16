@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "y8d4X3WxBjWxw7obWsFKIm76o9Jq+TyN8N9JUbPDSBFdyvAROC4QxVWsTh9ce4c3IdC4lbKMhYrvNo8TQTuihQ==",
+  "success": true,
+  "projectFilePath": "E:\\tugas_koko\\Semester_7\\Junior_Projek _TI\\Program #2\\Connect PostGreSQL\\ConnectPostGreSQL\\ConnectPostGreSQL\\ConnectPostGreSQL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\npgsql\\6.0.6\\npgsql.6.0.6.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
