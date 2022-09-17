@@ -47,12 +47,12 @@
             // 
             this.dgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(55, 190);
+            this.dgvData.Location = new System.Drawing.Point(55, 209);
             this.dgvData.Name = "dgvData";
             this.dgvData.RowHeadersWidth = 51;
             this.dgvData.RowTemplate.Height = 29;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvData.Size = new System.Drawing.Size(571, 206);
+            this.dgvData.Size = new System.Drawing.Size(731, 206);
             this.dgvData.TabIndex = 0;
             this.dgvData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellClick);
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
@@ -60,7 +60,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtFirstName.Location = new System.Drawing.Point(55, 117);
+            this.txtFirstName.Location = new System.Drawing.Point(205, 85);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(134, 27);
             this.txtFirstName.TabIndex = 1;
@@ -68,7 +68,7 @@
             // txtMidName
             // 
             this.txtMidName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtMidName.Location = new System.Drawing.Point(254, 117);
+            this.txtMidName.Location = new System.Drawing.Point(205, 124);
             this.txtMidName.Name = "txtMidName";
             this.txtMidName.Size = new System.Drawing.Size(134, 27);
             this.txtMidName.TabIndex = 2;
@@ -76,7 +76,7 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtLastName.Location = new System.Drawing.Point(448, 117);
+            this.txtLastName.Location = new System.Drawing.Point(205, 164);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(134, 27);
             this.txtLastName.TabIndex = 3;
@@ -95,7 +95,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(254, 88);
+            this.label2.Location = new System.Drawing.Point(55, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 5;
@@ -106,7 +106,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(448, 88);
+            this.label3.Location = new System.Drawing.Point(55, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 20);
             this.label3.TabIndex = 6;
@@ -115,9 +115,9 @@
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsert.Location = new System.Drawing.Point(55, 150);
+            this.btnInsert.Location = new System.Drawing.Point(372, 88);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(134, 27);
+            this.btnInsert.Size = new System.Drawing.Size(134, 96);
             this.btnInsert.TabIndex = 4;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -126,9 +126,9 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdate.Location = new System.Drawing.Point(254, 150);
+            this.btnUpdate.Location = new System.Drawing.Point(512, 88);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(134, 27);
+            this.btnUpdate.Size = new System.Drawing.Size(134, 96);
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -137,9 +137,9 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.Location = new System.Drawing.Point(448, 150);
+            this.btnDelete.Location = new System.Drawing.Point(652, 88);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(134, 27);
+            this.btnDelete.Size = new System.Drawing.Size(134, 96);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -148,7 +148,7 @@
             // btnLoaddata
             // 
             this.btnLoaddata.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLoaddata.Location = new System.Drawing.Point(492, 402);
+            this.btnLoaddata.Location = new System.Drawing.Point(652, 436);
             this.btnLoaddata.Name = "btnLoaddata";
             this.btnLoaddata.Size = new System.Drawing.Size(134, 27);
             this.btnLoaddata.TabIndex = 10;
@@ -160,7 +160,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(192, 9);
+            this.label4.Location = new System.Drawing.Point(247, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(290, 54);
             this.label4.TabIndex = 11;
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 450);
+            this.ClientSize = new System.Drawing.Size(806, 494);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnLoaddata);
             this.Controls.Add(this.btnDelete);

@@ -34,28 +34,8 @@ namespace ConnectPostGreSQL
 
         public void btnLoaddata_Click_1(object sender, EventArgs e)
         {
-           // NpgsqlDataAdapter da = default(NpgsqlDataAdapter);
-            //sql = "select * from st_select()";
-            //NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
-            //DataTable dt = new DataTable();
             try
             {
-
-                //dgvData.DataSource = null;
-                //conn.Open();
-                //cmd = new NpgsqlCommand(); //memanggil fungsi command Npgsql
-                //cmd.Connection = conn; // mengoneksikan command dengan postgre local
-                //cmd.CommandType = CommandType.Text;
-                //cmd.CommandText = "select * from st_select()";
-                //NpgsqlDataReader rd = cmd.ExecuteRea der();
-                //if (rd.HasRows)
-                //{
-                //    dt = new DataTable();
-                //    dt.Load(rd);
-                //    dgvData.DataSource = dt;
-                //}
-                //conn.Dispose();
-                //conn.Close();
                 dgvData.DataSource = null;
                 conn.Open();
                 sql = "select * from st_select()";
@@ -63,15 +43,6 @@ namespace ConnectPostGreSQL
                 dt = new DataTable();
                 NpgsqlDataReader rd = cmd.ExecuteReader();
                 dt.Load(rd);
-                //da = new NpgsqlDataAdapter();
-                //da.SelectCommand = cmd;
-                //da.Fill(dt);
-                //conn.Open();
-                //sql = "select * from st_select()";
-                ////cmd.Connection = conn;
-                //NpgsqlCommand cmd = new NpgsqlCommand(sql,conn);
-                //DataTable dt = new DataTable();
-                //dt.Load(cmd.ExecuteReader());
                 dgvData.DataSource = dt;
                 conn.Close();
 
@@ -92,17 +63,21 @@ namespace ConnectPostGreSQL
             try
             {
                 conn.Open();
+                
                 sql = @"select * from st_insert(:_firstname,:_midname,:_lastname)"; //select sql anyar
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_firstname", txtFirstName.Text); //add value from txt to column firstname
                 cmd.Parameters.AddWithValue("_midname", txtMidName.Text);
                 cmd.Parameters.AddWithValue("_lastname", txtLastName.Text);
+                conn.Close();
+                MessageBox.Show("Data Murid Berhasil diinputkan", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnLoaddata.PerformClick();
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
                     conn.Close();
                     MessageBox.Show("Data Murid Berhasil diinputkan","Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnLoaddata.PerformClick();
-                    //txtFirstName.Text = txtLastName.Text = txtMidName.Text = null;
+                    txtFirstName.Text = txtLastName.Text = txtMidName.Text = null;
                 }
 
 
@@ -135,7 +110,6 @@ namespace ConnectPostGreSQL
                 {
                     conn.Close();
                     MessageBox.Show("Data Murid Berhasil diupdate", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //btnL.PerformClick(); //kalo insertnya diklik 
                     btnLoaddata.PerformClick();
                     txtFirstName.Text = txtLastName.Text = txtMidName.Text = null;
                     r = null;
