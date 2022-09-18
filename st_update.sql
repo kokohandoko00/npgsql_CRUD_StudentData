@@ -1,18 +1,26 @@
----- select function ----
-create function st_select()
-returns table
+---- update function ----
+
+create or replace function st_update
 (
 	_id character varying,
-	_firstname character varying,
-	_midname character varying,
-	_lastname character varying
-	
+	_name character varying,
+	_alamat character varying,
+	_no_handphone character varying
 ) 
-	language plpgsql
-	as
+	returns int 
+	language plpgsql 
+	AS
 '
-begin
-	return query
-	select id, firstname, midname, lastname from tbl_students;
+BEGIN 
+	update tbl_students SET 
+		name=_name, 
+		alamat=_alamat, 
+		no_handphone=_no_handphone
+	WHERE id=_id;
+	if found then
+		return 1;
+	else
+		return 0;
+	end if;
 end
 '
