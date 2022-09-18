@@ -1,15 +1,18 @@
----- delete function ----
-create function st_delete(_id character varying)
-returns int AS
+---- select function ----
+create function st_select()
+returns table
+(
+	_id character varying,
+	_name character varying,
+	_alamat character varying,
+	_no_handphone character varying
+	
+) 
+	language plpgsql
+	as
 '
-begin 
-	DELETE FROM public.tbl_students
-	WHERE id=_id;
-	if found then
-		return 1;
-	else
-		return 0;
-	end if;
+begin
+	return query
+	select id, name, alamat, no_handphone from tb_users;
 end
 '
-language plpgsql;

@@ -1,22 +1,25 @@
----- update function ----
-
-create or replace function st_update
+---- insert function ----
+create function st_insert
 (
-	_id character varying,
-	_firstname character varying,
-	_midname character varying,
-	_lastname character varying
-) 
-	returns int 
-	language plpgsql 
-	AS
+	_name character varying,
+	_alamat character varying,
+	_no_handphone character VARYING
+)
+returns int AS
 '
-BEGIN 
-	update tbl_students SET 
-		firstname=_firstname, 
-		midname=_midname, 
-		lastname=_lastname
-	WHERE id=_id;
+begin 
+	insert into public.tb_users
+	(
+		name,
+		alamat,
+		no_handphone
+	)
+	values 
+	(
+		_name,
+		_alamat,
+		_no_handphone
+	);
 	if found then
 		return 1;
 	else
@@ -24,3 +27,4 @@ BEGIN
 	end if;
 end
 '
+language plpgsql;
