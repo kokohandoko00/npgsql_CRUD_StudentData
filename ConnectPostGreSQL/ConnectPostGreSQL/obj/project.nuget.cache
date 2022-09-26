@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "y8d4X3WxBjWxw7obWsFKIm76o9Jq+TyN8N9JUbPDSBFdyvAROC4QxVWsTh9ce4c3IdC4lbKMhYrvNo8TQTuihQ==",
+  "dgSpecHash": "WtkGOVl9ImiCKd2krPYK7lg5cKfUDcc5kg77UT41D8XLUMEAWCC40ZinmWePxMi1McPrTkk+2O9JyXoqsk7w5w==",
   "success": true,
   "projectFilePath": "E:\\tugas_koko\\Semester_7\\Junior_Projek _TI\\Program #2\\Connect PostGreSQL\\ConnectPostGreSQL\\ConnectPostGreSQL\\ConnectPostGreSQL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\npgsql\\6.0.6\\npgsql.6.0.6.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

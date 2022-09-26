@@ -1,6 +1,8 @@
 using Npgsql;
 using System.Data;
 using System.Windows.Forms;
+using QRCoder;
+using System.Drawing;
 
 namespace ConnectPostGreSQL
 {
@@ -64,20 +66,17 @@ namespace ConnectPostGreSQL
             {
                 conn.Open();
                 
-                sql = @"select * from st_insert(:_firstname,:_midname,:_lastname)"; //select sql anyar
+                sql = @"select * from st_insert(:_name,:_alamat,:_no_handphone)";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_firstname", txtFirstName.Text); //add value from txt to column firstname
-                cmd.Parameters.AddWithValue("_midname", txtMidName.Text);
-                cmd.Parameters.AddWithValue("_lastname", txtLastName.Text);
-                conn.Close();
-                MessageBox.Show("Data Murid Berhasil diinputkan", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnLoaddata.PerformClick();
+                cmd.Parameters.AddWithValue("_name", txtName.Text);
+                cmd.Parameters.AddWithValue("_alamat", txtAlamat.Text);
+                cmd.Parameters.AddWithValue("_no_handphone", txtNo_Handphone.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
                     conn.Close();
-                    MessageBox.Show("Data Murid Berhasil diinputkan","Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Data Users Berhasil diinputkan","Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnLoaddata.PerformClick();
-                    txtFirstName.Text = txtLastName.Text = txtMidName.Text = null;
+                    txtName.Text = txtNo_Handphone.Text = txtAlamat.Text = null;
                 }
 
 
@@ -100,18 +99,18 @@ namespace ConnectPostGreSQL
             try
             {
                 conn.Open();
-                sql = @"select * from st_update(:_id,:_firstname,:_midname,:_lastname)"; //select sql anyar
+                sql = @"select * from st_update(:_id,:_name,:_alamat,:_no_handphone)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_id", r.Cells["_id"].Value.ToString());
-                cmd.Parameters.AddWithValue("_firstname", txtFirstName.Text); //add value from txt to column firstname
-                cmd.Parameters.AddWithValue("_midname", txtMidName.Text);
-                cmd.Parameters.AddWithValue("_lastname", txtLastName.Text);
+                cmd.Parameters.AddWithValue("_name", txtName.Text);
+                cmd.Parameters.AddWithValue("_alamat", txtAlamat.Text);
+                cmd.Parameters.AddWithValue("_no_handphone", txtNo_Handphone.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
                     conn.Close();
-                    MessageBox.Show("Data Murid Berhasil diupdate", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Data Users Berhasil diupdate", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnLoaddata.PerformClick();
-                    txtFirstName.Text = txtLastName.Text = txtMidName.Text = null;
+                    txtName.Text = txtNo_Handphone.Text = txtAlamat.Text = null;
                     r = null;
                 }
             }
@@ -120,16 +119,16 @@ namespace ConnectPostGreSQL
             {
                 MessageBox.Show("Error:" + ex.Message, "Update FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-}
+        }
 
         private void dgvData_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 r = dgvData.Rows[e.RowIndex];
-                txtFirstName.Text = r.Cells["_firstname"].Value.ToString();
-                txtMidName.Text = r.Cells["_midname"].Value.ToString();
-                txtLastName.Text = r.Cells["_lastname"].Value.ToString();
+                txtName.Text = r.Cells["_name"].Value.ToString();
+                txtAlamat.Text = r.Cells["_alamat"].Value.ToString();
+                txtNo_Handphone.Text = r.Cells["_no_handphone"].Value.ToString();
             }
         }
 
@@ -141,7 +140,7 @@ namespace ConnectPostGreSQL
                 return;
             }
 
-            if (MessageBox.Show("Apakah benar anda ingin menghapus data "+r.Cells["_firstname"].Value.ToString()+" ?", "Hapus data terkonfirmasi",
+            if (MessageBox.Show("Apakah benar anda ingin menghapus data "+r.Cells["_name"].Value.ToString()+" ?", "Hapus data terkonfirmasi",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
 
                 try
@@ -154,10 +153,10 @@ namespace ConnectPostGreSQL
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
                     conn.Close();
-                    MessageBox.Show("Data Murid Berhasil dihapus", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Data Users Berhasil dihapus", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //btnL.PerformClick(); //kalo insertnya diklik 
                     btnLoaddata.PerformClick();
-                    txtFirstName.Text = txtLastName.Text = txtMidName.Text = null;
+                    txtName.Text = txtNo_Handphone.Text = txtAlamat.Text = null;
                     r = null;
 
                 }
@@ -167,6 +166,13 @@ namespace ConnectPostGreSQL
             {
                 MessageBox.Show("Error:" + ex.Message, "Update FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        
+
+        private void btn_qr_Click_1(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2(this);
+            f2.Show();
         }
     }
 }
