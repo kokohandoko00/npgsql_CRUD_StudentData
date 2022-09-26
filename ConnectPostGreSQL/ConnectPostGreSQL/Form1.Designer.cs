@@ -195,9 +195,6 @@
         #endregion
 
         private DataGridView dgvData;
-        private TextBox txtFirstName;
-        private TextBox txtMidName;
-        private TextBox txtLastName;
         private Label label1;
         private Label label2;
         private Label label3;
