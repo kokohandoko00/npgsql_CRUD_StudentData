@@ -30,13 +30,19 @@ namespace ConnectPostGreSQL
             string nama = f1.txtName.Text;
             string alamat = f1.txtAlamat.Text;
             string no_hp = f1.txtNo_Handphone.Text;
-            lb_qr.Text = GenerateInfo(nama, alamat, no_hp, out qr);
+            lb_qr.Text = GenerateQR(nama, alamat, no_hp, out qr);
 
             pb_qr.BackgroundImage = qr;
         }
-        public static string GenerateInfo(string nama, string alamat, string no_handphone, out Bitmap bitMap)
+
+        public static string GenerateQR(string nama, string alamat, string no_handphone)
         {
-            string text = "#" + nama + alamat + no_handphone;
+            string result = "#" + nama + alamat + no_handphone;
+            return result;
+        }
+        public static string GenerateQR(string nama, string alamat, string no_handphone, out Bitmap bitMap)
+        {
+            string text = GenerateQR(nama, alamat, no_handphone);
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(text, QRCodeGenerator.ECCLevel.Q);
             QRCode qrCode = new QRCode(qrCodeData);
