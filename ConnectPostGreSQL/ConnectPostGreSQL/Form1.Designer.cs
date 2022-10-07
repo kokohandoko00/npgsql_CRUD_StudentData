@@ -157,7 +157,7 @@
             this.btnLoaddata.TabIndex = 10;
             this.btnLoaddata.Text = "LoadData";
             this.btnLoaddata.UseVisualStyleBackColor = true;
-            this.btnLoaddata.Click += new System.EventHandler(this.btnLoaddata_Click_1);
+            this.btnLoaddata.Click += new System.EventHandler(this.btnLoaddata_Click);
             // 
             // label4
             // 

@@ -34,12 +34,12 @@ namespace ConnectPostGreSQL
             
         }
 
-        public void btnLoaddata_Click_1(object sender, EventArgs e)
+        public void btnLoaddata_Click(object sender, EventArgs e)
         {
             try
             {
-                dgvData.DataSource = null;
                 conn.Open();
+                dgvData.DataSource = null;
                 sql = "select * from st_select()";
                 cmd = new NpgsqlCommand(sql, conn);
                 dt = new DataTable();
@@ -47,12 +47,10 @@ namespace ConnectPostGreSQL
                 dt.Load(rd);
                 dgvData.DataSource = dt;
                 conn.Close();
-
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
-                MessageBox.Show("Error:"+ex.Message, "FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+                MessageBox.Show("Error:" + ex.Message, "FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -65,7 +63,6 @@ namespace ConnectPostGreSQL
             try
             {
                 conn.Open();
-                
                 sql = @"select * from st_insert(:_name,:_alamat,:_no_handphone)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_name", txtName.Text);
@@ -73,14 +70,11 @@ namespace ConnectPostGreSQL
                 cmd.Parameters.AddWithValue("_no_handphone", txtNo_Handphone.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    conn.Close();
-                    MessageBox.Show("Data Users Berhasil diinputkan","Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnLoaddata.PerformClick();
-                    txtName.Text = txtNo_Handphone.Text = txtAlamat.Text = null;
+                    MessageBox.Show("Data Users Berhasil diinputkan", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    conn.Close(); // Memutuskan koneksi dengan database
+                    btnLoaddata.PerformClick(); //memanggil class btnLoaddata untuk menampilkan data yang terbaru pada datagridview
+                    txtName.Text = txtNo_Handphone.Text = txtAlamat.Text = null; //mengosongkan value pada semua textbox
                 }
-
-
-
             }
             catch (Exception ex)
             {
@@ -107,11 +101,12 @@ namespace ConnectPostGreSQL
                 cmd.Parameters.AddWithValue("_no_handphone", txtNo_Handphone.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    conn.Close();
                     MessageBox.Show("Data Users Berhasil diupdate", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    conn.Close();
                     btnLoaddata.PerformClick();
                     txtName.Text = txtNo_Handphone.Text = txtAlamat.Text = null;
                     r = null;
+
                 }
             }
 
@@ -136,7 +131,7 @@ namespace ConnectPostGreSQL
         {
             if (r == null)
             {
-                MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Good!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -144,27 +139,24 @@ namespace ConnectPostGreSQL
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
 
                 try
-            {
-                conn.Open();
-                sql = @"select * from st_delete(:_id)"; //select sql anyar
-                cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_id", r.Cells["_id"].Value.ToString());
-               
-                if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    conn.Close();
-                    MessageBox.Show("Data Users Berhasil dihapus", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //btnL.PerformClick(); //kalo insertnya diklik 
-                    btnLoaddata.PerformClick();
-                    txtName.Text = txtNo_Handphone.Text = txtAlamat.Text = null;
-                    r = null;
-
+                    conn.Open();
+                    sql = @"select * from st_delete(:_id)";
+                    cmd = new NpgsqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("_id", r.Cells["_id"].Value.ToString());
+                    if ((int)cmd.ExecuteScalar() == 1)
+                    {
+                        MessageBox.Show("Data Users Berhasil dihapus", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        conn.Close();
+                        btnLoaddata.PerformClick();
+                        txtName.Text = txtNo_Handphone.Text = txtAlamat.Text = null;
+                        r = null;
+                    }
                 }
-            }
 
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message, "Update FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error:" + ex.Message, "Delete FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         
