@@ -5,7 +5,7 @@ create function st_insert
 	_alamat character varying,
 	_no_handphone character VARYING
 )
-returns int AS
+returns INT AS
 '
 begin 
 	insert into public.tb_users

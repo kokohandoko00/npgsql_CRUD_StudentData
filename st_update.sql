@@ -8,11 +8,10 @@ create or replace function st_update
 	_no_handphone character varying
 ) 
 	returns int 
-	language plpgsql 
 	AS
 '
 BEGIN 
-	update tbl_students SET 
+	update tb_users SET
 		name=_name, 
 		alamat=_alamat, 
 		no_handphone=_no_handphone
@@ -24,3 +23,4 @@ BEGIN
 	end if;
 end
 '
+language plpgsql 
